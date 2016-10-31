@@ -1,6 +1,6 @@
 
 body {
-  padding: 2em;
+  padding: 1.5em;
   font-family: 'Cormorant Garamond', serif;
   background: linear-gradient(#8b9da9, #fff6e4);
   box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
@@ -46,8 +46,12 @@ ul {
 
 .social:hover {
   opacity: 1;
-
 }
+
+.social svg {
+  width: 2rem;
+}
+
 h1 {
   text-align: center;
   font-family: 'Merriweather', serif;
@@ -61,7 +65,7 @@ h1 {
 
 h2 {
   font-size: 1.3em;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 h3 {
@@ -125,7 +129,12 @@ figcaption .info {
   display: none;
 }
 
+
 @media (min-width: 1000px) {
+
+  body {
+    padding: 2em;
+  }
 
   nav a {
     padding: 1em;
