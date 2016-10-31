@@ -12,6 +12,10 @@ h1, h2, h3, p {
   margin: 0;
 }
 
+a {
+  cursor: pointer;
+}
+
 .body-inner {
   /*border-top: 20px solid seagreen;*/
   margin: 0 auto;
@@ -50,6 +54,25 @@ ul {
 
 .social svg {
   width: 2rem;
+}
+
+/* makes anchor tags with svg clickable */
+
+.svg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.cover-photo {
+  max-width: 100%;
+  background: url('../img/kalee-photo.png') no-repeat;
+  min-height: 30rem;
+  background-size: cover;
+
 }
 
 h1 {
@@ -104,11 +127,15 @@ nav {
 nav a {
   color: white;
   width: 100%;
-  display: inline-block;
   padding: .5em;
   font-size: 1em;
   text-align: right;
-background: linear-gradient(70deg, #94719A, #3AC5C9)
+  background: linear-gradient(70deg, #94719A, #3AC5C9)
+}
+
+nav a.current {
+  background: #FFFFF8;
+  color: #333;
 }
 
 figure {
@@ -143,7 +170,7 @@ figcaption .info {
   }
 
   figcaption .info {
-    display: block;
+    /*display: block;*/
   }
 
   h1 {
