@@ -96,17 +96,8 @@ h3 {
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
-  margin: 0 auto;
-  border-radius: 100px;
-  background: white;
-  position: absolute;
-  top: 11px;
-  left: 6px;
-  border-bottom: 3px solid seagreen;
-  border-right: 6px solid seagreen;
-  transform: rotate(-7deg);
+
+
 
 }
 
@@ -114,8 +105,10 @@ h3 {
   width: 50px;
   height: 50px;
   position: relative;
+  border-radius: 100px;
   top: 4px;
-  stroke: #333;
+  background: #333;
+  fill: white;
 }
 
 nav {
