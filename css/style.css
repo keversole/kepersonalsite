@@ -2,7 +2,12 @@
 body {
   padding: 1.5em;
   font-family: 'Cormorant Garamond', serif;
-  background: linear-gradient(#8b9da9, #fff6e4);
+  background: linear-gradient(
+      to top,
+      rgba(255, 81, 50, 0.9),
+      rgba(254, 45, 88, 0.9)
+    ),url(http://i.imgur.com/HMZmee4.jpg);
+  }
   box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
 
 }
@@ -10,10 +15,6 @@ body {
 h1, h2, h3, p {
   color: #333;
   margin: 0;
-}
-
-a {
-  cursor: pointer;
 }
 
 .body-inner {
@@ -25,7 +26,7 @@ a {
 }
 
 a {
-  color: seagreen;
+  color: rgba(254, 45, 88, 0.9);
   text-decoration: none;
 }
 
@@ -108,6 +109,7 @@ h3 {
   border-radius: 100px;
   top: 4px;
   background: #333;
+  border: 3px solid #333;
   fill: white;
 }
 
